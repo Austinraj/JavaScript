@@ -1,0 +1,30 @@
+students informations
+
+GET => READ students
+POST=> create students
+PUT =>update students
+DELETE =>delete students
+PATCH => create and update students using post and put same work executed patch
+
+HTTP response status:
+
+100-199  Holed on
+200-299  Success
+300-399  Redirect the file
+400-499  client side error
+500-599  Server side error
+
+
+important response code:
+200-ok
+201-created
+400-bad request
+401-Unauthorized
+403-Forbidden
+404-not found
+405-method not Allowed
+500-Internal Server Error
+501-Not Implemented
+502-bad Getway
+503-Service Unavailable
+505-HTTP Version Not Supported

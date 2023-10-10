@@ -1,8 +1,0 @@
-students informations
-
-GET => READ students
-POST=> create students
-PUT =>update students
-DELETE =>delete students
-PATCH => create and update students using post and put same work executed patch
-

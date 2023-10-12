@@ -1,0 +1,17 @@
+{
+  "name": "austin",
+  "age" :  21,
+  "religion": "Christian",
+  "Communtiy": "BC",
+  "Gender": "male",
+  "mail_id": "malaraustinraja@gamil.com",
+  "mobile_no": [7708268176,9584932345],
+  "Address": {
+    "d_no":"301/w2",
+    "street":"Thomas street",
+    "place": "Rayappanpatti",
+    "pncode":625526
+  },
+  "Graduate":"first",
+  "Date_of_birth":"25/09/2002"
+}

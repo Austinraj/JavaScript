@@ -108,31 +108,31 @@ duplicates.forEach(console.log);
 
 
 //a.
-// const array5 = [1,2,3,4,5,6,7,8,9,10];
-// var number = ()=>{//arrow function
-//     for (i of array){
-//         if(i %2 ==0){
-//             console.log(i);
-//         }
+const array5 = [1,2,3,4,5,6,7,8,9,10];
+var number = ()=>{//arrow function
+    for (i of array){
+        if(i %2 ==0){
+            console.log(i);
+        }
         
-//     }
-// }
-// number();
+    }
+}
+number();
 
-// //b.
-// var str = ()=>{
-//     var name = "raja";
-//     console.log(name.toUpperCase());
-// }
-// str();
+//b.
+var str = ()=>{
+    var name = "raja";
+    console.log(name.toUpperCase());
+}
+str();
 
-// //c.
-// let adding =0;
-// var sum1 =()=>{
-//     for(i=0;i<array5.length;i++){
+//c.
+let adding =0;
+var sum1 =()=>{
+    for(i=0;i<array5.length;i++){
        
-//         adding +=array5[i];
-//     }
-//     console.log(adding);
-// }
-// sum1(); 
+        adding +=array5[i];
+    }
+    console.log(adding);
+}
+sum1(); 

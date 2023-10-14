@@ -1,0 +1,59 @@
+variables
+ var name = "austin"; // Assignment operator
+ var i = 1;
+ i = i +1; //i +=1
+ i = i* 9; //i *=9
+
+ operators
+  => sum (+)
+  => difference(-)
+  =>product(*)
+  =>Quotient(/)
+  => Reminder (%)
+  => power (**)
+
+Comparative operators
+     >   - Greater Than
+     >=  -
+     <   -
+     <=  -
+     ==  -
+     === -
+     !=  -
+     !== - 
+
+ternary operators
+    ? : // ? true
+    // : flase
+
+Condition Statements
+    if
+    else 
+    else if
+
+Iteration/Lop\oping Statements
+    for
+    For IN (Array - index, object - key)
+    For of
+    While
+    Do While
+
+INcrement/Decrement
+    ++i (pre-Inc)
+    i++ (Poast-Inc)
+    --i (Pre-Dec)
+    i-- (Post-Dec)
+
+Type of Conversion
+    number()
+    string()
+    Boolean()
+    parseInt()
+    parseFloat()
+
+Type of Function    
+    Named Function
+    Anonyomous Function
+    Arrow Function
+    IIF Function
+    Generator Function

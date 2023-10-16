@@ -48,6 +48,6 @@ console.log(typeof(test));
 console.log(typeof(+test));
 
 var str = "1243";
-number = number(str);
+number = parseInt(str);
 
 console.log(number);

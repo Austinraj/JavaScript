@@ -19,3 +19,33 @@ d) Write a piece of code that creates an instance of the class Movie with the ti
 the studio “Eon Productions”, and the rating “PG­13” */
 
 
+class Movie {
+    // title = "leo";
+    // studio = "lika studio producation";
+    // rating = "U/A";
+
+    constructor(title,studio,rating){
+        this.title =title;
+        this.studio = studio;
+        //this.rating = rating;
+
+      
+    }
+    getPG = function(){
+        // if(rating == "PG"){
+        //     console.log(`${rating}`);
+        // }else{
+        //     console.log(`no rating provid`)
+        // }
+        this.rating1 = rating1;
+
+        var rating1 = (rating1 == "PG13") ? `no rating provid` : `PG13`;
+        console.log(`${this.title} ${this.studio} ${rating1} `);
+        
+    }
+}
+
+const print1 = new Movie("Casino Royale","Eon Production","PG");
+//console.log(print)
+
+print1.getPG();

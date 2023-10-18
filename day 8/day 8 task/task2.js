@@ -1,48 +1,40 @@
+//1. Write a “person” class to hold all the details.
+//2.write a class to calculate the uber price.
 
-const htpp = new XMLHttpRequest();
+//1.
+class Person {
+    firstName = "austin";
+    lastName  = "raja";
+    age = 20;
+    place = "theni";
 
-htpp.onreadystatechange = function (){
-    if (this.readyState == 4){
-        if(this.status == 200){
-            const user = JSON.parse(this.responseText);
-            
-             user.forEach(country => {
-                
-                
-            //    var only  = country.region;
-            //    var only;
-            //   only.filter(element =>{
-            //     return element.region === "Asia";
-            //   });
-
-            //   console.log(only);
-                
-            //                             //console.log(region);
-            // //    if (region ==Asia){
-            // //     console.log(region);
-            // //    }
-            });
-            only.filter(element =>{
-                return element.region === "Asia";
-              });
-            // user.filter(country1 =>{
-            //     var only = country1.region == Asia;
-            //     console.log(only);
-            // });
-
-           // console.log(AsiaOnly);
-
-
-
-    }else{
-        console.error(`404 Not Found`);
+    get printFullDetails(){
+        console.log(`${this.firstName} ${this.lastName} ${this.age} ${this.place}`)
     }
 }
+
+const print = new Person();
+console.log(print);
+
+// error make claver
+
+
+//2.
+class Uber {
+    enterLocation = "chenni";
+    enterDestion = "tambaram";
+
 }
-htpp.open("GET","https://restcountries.com/v3.1/all");
-htpp.send();
 
+class km extends Uber {
+    Kelameter = "24"
+    price = "500"
+    price1 = function(){
+        console.log("560");
+    }
+}
 
-
+const pri = new km();
+console.log(pri);
 
 

@@ -11,11 +11,11 @@ http.onreadystatechange = function (){
                 const population = country.population;
           
                 const countryflage =country.flags.png;
-                console.log(countryname);
+              //  console.log(countryname);
                 console.log(region);
-                console.log(subRegion);
-                console.log(population);
-                console.log(countryflage);
+              //  console.log(subRegion);
+               // console.log(population);
+               // console.log(countryflage);
 
                 //console.log(country);
             });

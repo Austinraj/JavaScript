@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Default Values for Form Elements</title>
+</head>
+<body>
+    <form>
+      
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" value="JohnDoe">
+
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" value="secret123">
+
+       
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+       
+        <p>Country:</p>
+        <select id="country" name="country">
+            <option value="us">United States</option>
+            <option value="ca" selected>Canada</option>
+            <option value="uk">United Kingdom</option>
+        </select>
+
+    
+        <p>Comments:</p>
+        <textarea id="comments" name="comments">This is a default comment.</textarea><br>
+
+       <div>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes" checked>
+        <label for="subscribe">Subscribe to Newsletter</label><br>
+    </div>
+      <div>
+        <input type="submit" value="Submit">
+    </div>
+    </form>
+</body>
+</html>

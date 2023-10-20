@@ -21,7 +21,7 @@
 //Values
 //reverse
 
-const arr = ["Austin",45,53,12];
+const arr = ["Austin", 45, 53, 12];
 console.log(arr.join("*"));//Join
 
 
@@ -32,12 +32,12 @@ console.log(arr.at(-3));//At used + and -
 //Concat
 const arr1 = [1, 2, 3, 4];
 const arr2 = [5, 6, 7, 8, 5, 9];
-const arr3 =[9, 10 ,11];
-const arr4 =arr1.concat(arr2, arr3);
+const arr3 = [9, 10, 11];
+const arr4 = arr1.concat(arr2, arr3);
 console.log(arr4);
 
 
-const arr5 =[10,...arr1];//p
+const arr5 = [10, ...arr1];//p
 
 
 //Enteries
@@ -48,7 +48,7 @@ console.log(itr.next().value);
 
 
 //Every 
-const isLess5 = arr1.every((a)=> a < 5);
+const isLess5 = arr1.every((a) => a < 5);
 console.log(isLess5);//boolean only true or false
 
 //Find
@@ -115,7 +115,7 @@ console.log(names.slice(2));//MRF like map.],readce,fliter
 console.log(names.slice(1, 3)); //1 is start 3 is end 
 
 //Some
-console.log(arr1.some((a)=> a < 5));//one true true print pannu
+console.log(arr1.some((a) => a < 5));//one true true print pannu
 
 
 //Splice
@@ -149,8 +149,8 @@ console.log(Object.values(user));
 
 
 //block scoping
-function print(){
-    if(true){
+function print() {
+    if (true) {
         let names1 = "gv";
         const n = "au";
         var namesss = "austi";
@@ -162,22 +162,22 @@ print();
 
 //spread operators & rest parameter
 
-function sum(...num){//...num array return paanu MRF allso used pannalam
-    console.log(num.reduce((sum, n)=> sum +n));
+function sum(...num) {//...num array return paanu MRF allso used pannalam
+    console.log(num.reduce((sum, n) => sum + n));
 }
 
 sum(10, 25);
 sum(10, 24, 23);
 
 
-const obj = {name: "raja"}
-const a = {city: "chennai",...obj};// spread operators
+const obj = { name: "raja" }
+const a = { city: "chennai", ...obj };// spread operators
 console.log(a);
 
 //array & object Destructure
 
-const obj1 = { namess: "austin", age: "20", place: "theni"}
-const {namess,age,place} = obj1;
+const obj1 = { namess: "austin", age: "20", place: "theni" }
+const { namess, age, place } = obj1;
 console.log(namess, age);
 
 

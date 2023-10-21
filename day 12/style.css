@@ -1,0 +1,25 @@
+h2{
+    color: coral;
+
+}
+h3{
+    color: orangered;
+}
+p{
+    font-size: 25px;
+    color: red;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* tex-transform => uppercase
+    text-align =>
+    text-decoration =>
+    letter-spacing => letter between spacing
+    line-hight ->
+    background-color ->
+    color->
+    display->
+    object-fit -> cover and centain
+
+*/

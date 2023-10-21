@@ -1,0 +1,30 @@
+*{
+    background-color: #200302;
+}
+
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+h2{
+    text-align: center;
+    color: whitesmoke;
+    object-fit: cover;
+
+}
+
+.title{
+    text-align: center;
+    color: #a78584;
+    
+}
+.review{
+    margin-left: 300px;
+    margin-right: 300px;
+    overflow: auto;
+    justify-content: center;
+    text-align: center;
+    color: #a78584;
+}

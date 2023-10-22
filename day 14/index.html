@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 500px;
+            width: 500px;
+            margin: 100x;
+            border: 5px solid black;
+            position: relative;
+        }
+
+        .iteam {
+            height: 100px;
+            width: 100px;
+            padding: 10px;
+            border: 1px solid;
+
+        }
+
+        .div1 {
+            background-color: aqua;
+            position: fixed;
+            right: 100px;
+            top: 100px;
+        }
+
+        .div2 {
+            background-color: brown;
+        }
+
+        .div3 {
+            background-color: rebeccapurple;
+        }
+
+        /* 
+        position
+        static  //default work static
+        relative
+            left
+            right // 0px  ->static irukkum
+            bottom
+            top
+        absolute // use panna no sapce define pannum
+                    // parent la revlative irukkanum than child absolut use pannum
+            left  
+            right
+            bottom
+            top : 0px -> full screen use pannu top la 0 position irukum 
+        fixed  // screen change pannalum fixed irukkum that div 
+        Sticky // top: 0px; sticky use pananum illam work agathu
+        */
+        span {
+            color: red;
+            font-weight: bold;
+
+        }
+
+        .web {
+            color: green;
+        }
+
+        .web span {
+            color: inherit;
+        }
+
+        /* 
+        gradient
+
+        Linear -> linear-gradient(to right bottom, 60deg rad 10% ,green) min 2 color irukanum
+                -> repeating-linear-gradient
+        radial -> radial-gradient( red,yellow,green)  cricle use agum
+                ->repeating-radial-gradient(red, yellow 10%, green 15%)
+        conical ->conic-gradient()
+                ->repeating-conic-gradient()
+        */
+
+        /* 
+        overflow: scroll,auto,visible,hidden   //visible is default 
+        */
+        .content{
+            display: none;
+        }
+        .di:hover .content{
+            display: block;
+        }
+        h1{
+            display: flex;
+            flex-direction: ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p> Container</p> Container
+        <div class="iteam div1">div1</div>
+        <div class="iteam div2">div2</div>
+        <div class="iteam div3">div3</div>
+    </div>
+    <div class="di">
+        content
+        <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro iusto repellat atque repellendus tempora
+            mollitia tenetur, distinctio placeat adipisci eius neque? Autem repellendus eveniet, voluptates sit cum
+            dolores aperiam commodi!</p>
+    </div>
+    <p class="web">welcom to our <span>website</span></p>
+</body>
+
+</html>

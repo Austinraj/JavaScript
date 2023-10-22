@@ -1,6 +1,11 @@
 *{
     background-color: #200302;
 }
+div{
+    margin: 0;
+    padding: 0;
+
+}
 
 .image{
     display: block;
@@ -12,7 +17,6 @@ h2{
     text-align: center;
     color: whitesmoke;
     object-fit: cover;
-
 }
 
 .title{
@@ -20,11 +24,11 @@ h2{
     color: #a78584;
     
 }
+.div2{
+    display: flex;
+    flex-wrap: wrap;
+}
 .review{
-    margin-left: 300px;
-    margin-right: 300px;
-    overflow: auto;
-    justify-content: center;
     text-align: center;
     color: #a78584;
 }

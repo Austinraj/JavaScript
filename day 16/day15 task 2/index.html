@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Survey-Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="mb-1">
+            <label for="name" class="form-label"><b>Name</b><span>*</span></label>
+            <div class="first1">
+                <input type="text" class="form-control firstname" id="name">
+                <input type="text" class="form-control lastname" id="name">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"><b>Email</b><span>*</span></label>
+            <input type="email" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label "><b>Your Experience<span>*</span></b></label>
+            <div class="rating">
+                <label>
+                    <input type="radio" name="stars" value="1" />
+                    <span class="icon">★</span>
+                </label>
+                <label>
+                    <input type="radio" name="stars" value="2" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                </label>
+                <label>
+                    <input type="radio" name="stars" value="3" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                </label>
+                <label>
+                    <input type="radio" name="stars" value="4" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                </label>
+                <label>
+                    <input type="radio" name="stars" value="5" />
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                    <span class="icon">★</span>
+                </label>
+            </div>
+            <p>Overall, how would you rate you experience with us?</p>
+        </div>
+
+        <div class="mb-3">
+            <label for="" class="form-label"><b>How satisfied are you with<span>*</span></b></label>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <td scope="col">Very Unsatisfied</td>
+                        <td scope="col">Unsatisfied</td>
+                        <td scope="col">Neutral</td>
+                        <td scope="col">Satisfied</td>
+                        <td scope="col">Very Satisfied</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row"><label for="pur">Purchase</label></td>
+                        <td><input type="radio" id="pur" name="pur"></td>
+                        <td><input type="radio" id="pur" name="pur"></td>
+                        <td><input type="radio" id="pur" name="pur"></td>
+                        <td><input type="radio" id="pur" name="pur"></td>
+                        <td><input type="radio" id="pur" name="pur"></td>
+
+                    </tr>
+                    <tr>
+                        <td scope="row"><label for="sev">Service</label> </td>
+                        <td><input type="radio" name="sev"></td>
+                        <td><input type="radio" name="sev"></td>
+                        <td><input type="radio" name="sev"></td>
+                        <td><input type="radio" name="sev"></td>
+                        <td><input type="radio" name="sev"></td>
+                    </tr>
+                    <tr>
+                        <td scope="row"><label for="sevr">Company Overall</label> </td>
+                        <td><input type="radio" name="sevr"></td>
+                        <td><input type="radio" name="sevr"></td>
+                        <td><input type="radio" name="sevr"></td>
+                        <td><input type="radio" name="sevr"></td>
+                        <td><input type="radio" name="sevr"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label"><b>How likely are you to<span>*</span></b></label>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <td scope="col">Very Unliky</td>
+                        <td scope="col">Unliky</td>
+                        <td scope="col">Neutral</td>
+                        <td scope="col">Likely</td>
+                        <td scope="col">Very Likely </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row"><label for="pur1">Buy from us agin</label></td>
+                        <td><input type="radio" name="pur1"></td>
+                        <td><input type="radio" name="pur1"></td>
+                        <td><input type="radio" name="pur1"></td>
+                        <td><input type="radio" name="pur1"></td>
+                        <td><input type="radio" name="pur1"></td>
+
+                    </tr>
+                    <tr>
+                        <td scope="row"><label for="sev1">Recommend our product to other</label> </td>
+                        <td><input type="radio" name="sev1"></td>
+                        <td><input type="radio" name="sev1"></td>
+                        <td><input type="radio" name="sev1"></td>
+                        <td><input type="radio" name="sev1"></td>
+                        <td><input type="radio" name="sev1"></td>
+                    </tr>
+                    <tr>
+                        <td scope="row"><label for="sevr1">Recommend our company to other</label> </td>
+                        <td><input type="radio" name="sevr1"></td>
+                        <td><input type="radio" name="sevr1"></td>
+                        <td><input type="radio" name="sevr1"></td>
+                        <td><input type="radio" name="sevr1"></td>
+                        <td><input type="radio" name="sevr1"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"><b>Additional comments or
+                    suggestions</b></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="mb-3 p-1">
+            <button type="submit" value="submit">submit</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+     <style>
+        /* 
+        Align the div at the center of the flex using the 
+        css selector (flex-container) */
+            .flex-container {
+                display : flex;
+                justify-content: center;
+               align-items: center;
+                height: 500px;
+                width: 500px;
+                background-color: dodgerblue;
+            }
+            .flex-container > div {
+                margin: 20px;
+                padding: 20px;
+                font-size: 30px;
+                display: grid;
+                grid-template-columns:auto auto ;
+                grid-row: auto;
+                grid-column-start: 3;
+                grid-column-end: 3;
+                background-color: #f1f1f1;
+            }
+        </style>
+
+  </head>
+  <body>
+ <div class="flex-container">
+            <div>1</div>
+        </div>
+
+  </body>
+</html>

@@ -1,0 +1,16 @@
+.displ{
+    text-align: center ;
+    margin: 10px 0 10px 0 ;
+}
+img{
+    height: 350px ;
+    width: 600px ;
+    object-fit: cover;
+   display: flexbox;
+   align-items: center;
+}
+.display{
+    text-align: center;
+    margin: 10px 0 10px 0 ;
+
+}

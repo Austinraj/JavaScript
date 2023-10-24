@@ -11,12 +11,17 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container col-sm-5 mt-4">
         <div class="mb-1">
             <label for="name" class="form-label"><b>Name</b><span>*</span></label>
             <div class="first1">
                 <input type="text" class="form-control firstname" id="name">
                 <input type="text" class="form-control lastname" id="name">
+            </div>
+            <div class="mb-1 firstLast">
+                <p>First</p>
+                <p>Last</p>
+
             </div>
         </div>
         <div class="mb-3">
@@ -65,27 +70,27 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th scope="col"></th>
-                        <td scope="col">Very Unsatisfied</td>
-                        <td scope="col">Unsatisfied</td>
-                        <td scope="col">Neutral</td>
-                        <td scope="col">Satisfied</td>
-                        <td scope="col">Very Satisfied</td>
+                        <th scope="col-sm-2"></th>
+                        <!-- <td scope="col-sm-2">Very </td> -->
+                        <td scope="col-sm-2">Unsatisfied</td>
+                        <td scope="col-sm-2">Neutral</td>
+                        <td scope="col-sm-2">satisfied</td>
+                        <td scope="col-sm-2">Very satisfied </td>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td scope="row"><label for="pur">Purchase</label></td>
-                        <td><input type="radio" id="pur" name="pur"></td>
-                        <td><input type="radio" id="pur" name="pur"></td>
-                        <td><input type="radio" id="pur" name="pur"></td>
-                        <td><input type="radio" id="pur" name="pur"></td>
-                        <td><input type="radio" id="pur" name="pur"></td>
+                        <!-- <td><input type="radio"  name="pur"></td> -->
+                        <td><input type="radio"  name="pur"></td>
+                        <td><input type="radio"  name="pur"></td>
+                        <td><input type="radio"  name="pur"></td>
+                        <td><input type="radio"  name="pur"></td>
 
                     </tr>
                     <tr>
                         <td scope="row"><label for="sev">Service</label> </td>
-                        <td><input type="radio" name="sev"></td>
+                        <!-- <td><input type="radio" name="sev"></td> -->
                         <td><input type="radio" name="sev"></td>
                         <td><input type="radio" name="sev"></td>
                         <td><input type="radio" name="sev"></td>
@@ -93,7 +98,7 @@
                     </tr>
                     <tr>
                         <td scope="row"><label for="sevr">Company Overall</label> </td>
-                        <td><input type="radio" name="sevr"></td>
+                        <!-- <td><input type="radio" name="sevr"></td> -->
                         <td><input type="radio" name="sevr"></td>
                         <td><input type="radio" name="sevr"></td>
                         <td><input type="radio" name="sevr"></td>
@@ -102,6 +107,7 @@
                 </tbody>
             </table>
         </div>
+
         <div class="mb-3">
             <label for="" class="form-label"><b>How likely are you to<span>*</span></b></label>
             <table class="table table-striped">

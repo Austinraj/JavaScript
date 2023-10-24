@@ -1,6 +1,8 @@
 .container{
-    border: 2px solid red;
-    position: relative;
+    /* border: 2px solid wheat; */
+     position: relative;
+    
+     /* margin-top: 5px; */
 }
 span{
     color: red !important;
@@ -11,7 +13,11 @@ span{
  grid-template-columns: auto auto;
  gap: 20px;
 }
-
+.firstLast{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
 
 /* 
 

@@ -8,6 +8,10 @@ span{
     color: red !important;
 }
 
+p{
+  display: block;
+  flex-basis: 100px;
+}
 .first1{
     display: grid;
  grid-template-columns: auto auto;

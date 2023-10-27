@@ -50,6 +50,8 @@ console.log(ele4);
 
 
 
-// 
+// events
+//  addEventListener(<event> , <action>);
+//  removeEventListener(<event>, <action>);
 
 

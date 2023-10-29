@@ -10,3 +10,7 @@ setTimeout(() => {
 setInterval(() => {
     console.log("austin")
 }, 2000);
+
+// localStorage
+
+// sessionStorage

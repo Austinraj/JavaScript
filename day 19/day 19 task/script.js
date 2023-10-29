@@ -52,17 +52,40 @@ console.log(number.toString(16));
 // 6. 
 
 function validation(evt) {
-    evt.target.value = evt.target.value.substr(0, 6)
+  evt.target.value = evt.target.value.substr(0, 6)
 }
 
 // 7.In your HTML Add two buttons, where first button action for full screen mode and the second button for exit from full screen mode.
-const Ele =document.getElementById("on");
-function full(evt){
-  if(evt){
-    Ele.requestFullscreen();
-  }
-    
+const Ele = document.documentElement;
+function full() {
+  Ele.requestFullscreen();
+
 }
-const Ela = document.getElementById("of");
-Ela.exitFullScreen();
+function exitfull() {
+  document.exitFullscreen();
+}
+
+// 8.When user press any key in your html page show a alert that Invalid Key Pressed, but when user press spacebar show an alert Thank You..!! and close the current window.
+
+// document.addEventListener("keydown", (event)=>{
+//       if(event.key === ' '){
+//         alert("Thank you..!");
+//         window.close();
+//       }else{
+//         alert("Invalid key pressed")
+//       }
+// });
+
+// 9.
+const editableContent = document.getElementById("editableContent");
+
+  // Add a click event listener to make the content editable
+  editableContent.addEventListener("click", function() {
+    this.contentEditable = true;
+    this.classList.add("editable-active");
+    this.focus();
+  });
+
+
+
 

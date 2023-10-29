@@ -1,2 +1,2 @@
-// total class recap session
+// total javascript class recap session
 

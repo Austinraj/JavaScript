@@ -28,7 +28,7 @@ var name2 = null;
 console.log(name2);
 
 console.log(typeof(name1));
-console.log(typeof(null));
+console.log(typeof(null)); // typeof null is object
 
 //composite (object)
 

@@ -12,7 +12,7 @@ test("Chennai");
 
 function sum(num, num1){
     //console.log(num + num1)
-    return num + num
+    return num + num1
 }
 
 console.log(sum(25, 28));

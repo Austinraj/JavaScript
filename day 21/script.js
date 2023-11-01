@@ -1,74 +1,52 @@
-class User {
-    constructor(fname , lName , city , age){
-        this.fname = fname;
-        this.lName = lName;
+// CRUD Operation -create, Read, Update, Delete
 
-        this.city = city;
-        this.age =age;
-    }
+// create -post
+// Read -GET
+// Update -put
+// Delete - Delete
 
-    get getName(){
-        return `${this.fname} ${this.lName} ${this.city}`
-    }
+
+
+// GET      URL: https://www.melivecode.com/api/users
+// POST     URL: https://www.melivecode.com/api/users/create
+// PUT      URL: https://www.melivecode.com/api/users/update
+// DELETE   URL: https://www.melivecode.com/api/users/delete
+
+const BASE_URL ="https://www.melivecode.com/api/users";
+
+function loadUser(){
+
+const http = new XMLHttpRequest();
+
+http.onreadystatechange = function (){
+    const { readyState,status,responseText } = this;
+    if(readyState == 4 && status == 200){ 
+            let user =JSON.parse(responseText);
+           user = user.map(u =>{
+            return(`
+            <tr>
+            <td>${u.id}</td>
+            <td>
+                <img width="10%" src="${u.avatar}" class="avatar">
+            </td>
+            <td>${u.fname}</td>
+            <td>${u.lname}</td>
+            <td>${u.username}</td>
+            <td>
+                <button class="btn btn-sm btn-primary">edit</button>
+                <button class="btn btn-sm btn-danger">Delete</button>
+            </td>
+        </tr>
+        `);
+           });
+         document.getElementById("content").innerHTML = user.join("");
+        }  
+   
 }
 
-// Child, Derived , Sub
-class Student extends User {
-    constructor(fname ,lName ,city ,age ,course){
-        super(fname ,lName ,city ,age);
-        this.course = course;
-    }
-
-    // get getName(){
-    //     return `${this.fname} ${this.lName} ${this.city}`
-    // }
+http.open("GET", BASE_URL);
+http.send();
 }
 
-const student = new Student("austin" ,"raja", "chennai", 21 , "Mern");
-console.log(student.getName);
-class Mantor extends User {
-    constructor(fname ,lName ,city ,age , batch){
-        super(fname, lName ,city , age);
-        this.batch = batch
-    }
-}
+loadUser();
 
-const mentor = new Mantor("shaker" , "moorthi", "theni", 21,"bw3");
-console.log(mentor.getName);
-
-
-
-
-
-
-
-
-
-
-
-
-// const user1 = new User("austin", "raja", "chennai", 21);
-// console.log(user1.getName());
-
-
-// const user1 =new User({
-//     fname : "austin",
-//     lName: "raja",
-//     city: "chennai",
-//     age: 21,
-//     getName(){
-//         return `${this.fname} ${this.lName}`
-//     }
-// });
-// console.log(user1.getName);
-
-
-// const user2 ={
-//     fname : "shanker",
-//     lNmae: "moorith",
-//     city: "coimbatore",
-//     age: 22,
-//     getName(){
-//         return `${this.fname} ${this.lName}`
-//     }
-// }

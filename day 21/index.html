@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Display Record</title>
     <link rel="stylesheet" href="../day 15/css/style.css">
 </head>
 <body>
     <div class="container-fluid">
+        <!-- <div><h1>Users</h1></div> -->
         <div class="row">
-            <div class="col">
+            <div class="col-sm-8">
+                <div class="card">
+                    <div class="card-body">
+                
                 <table class="table">
                     <thead>
                         <tr>
@@ -21,54 +25,52 @@
                             <th>Action</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>
-                                <img width="10%" src="https://www.melivecode.com/users/1.png" class="avatar">
-                            </td>
-                            <td>Karn</td>
-                            <td>Yong</td>
-                            <td>cat.chat@melivecode.com</td>
-                            <td>
-                                <button class="btn btn-sm btn-primary">edit</button>
-                                <button class="btn btn-sm btn-danger">Delete</button>
-                            </td>
-                        </tr>
+                    <tbody id="content">
+                     <tr>
+                        <td>Loding....</td>
+                     </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="col">
-                <!-- <form class="form-control mt-3" method="get">
-                    <div>
-                        <label for="fname">firstName:</label>
-                        <input name="fname" id="firstName" type="tex" >
-            
+            </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <form  onsubmit="">
+                            <div class="form-group">
+                                <label for="fname">First Name:</label>
+                                <input type="text" class="form-control" id="fname" name="fname"
+                                    placeholder="Enter Your First Name " required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lname">Last Name:</label>
+                                <input type="text" class="form-control" id="lname" name="lname"
+                                    placeholder="Enter Your Last Name " required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="Enter Your Email " required>
+                            </div>
+                            <div class="form-group">
+                                <label for="avatar">Avatar:</label>
+                                <input type="text" class="form-control" id="avatar" name="avatar"
+                                    placeholder="Enter Your URL " required>
+                            </div>
+                            <div class="form-group m-3">
+                                <button type="reset" class="btn  btn-secondary">Reset</button>
+                                <button type="submit" class="btn btn-success">submit</button>
+                            </div>
+    
+                        </form>
                     </div>
-                    <div  >
-                        <label for="lname">LastName:</label>
-                        <input name="lname" id="LastName" type="text" >
-            
-                    </div>
-                    <div >
-                        <label for="email">Email:</label>
-                        <input name="email" id="email" type="email" >
-                        </div>
-                    <div >
-                        <button type="reset" class="form-control btn btn-sm btn-primary">reest
-                        </button>
-                        <button type="submit"class="form-control btn btn-sm btn-primary " >save</button>
-                    </div>
-            
-                </form> -->
-
-
+                </div>
             </div>
         </div>
     </div>
-    <!-- <script src="./script1.js"></script> -->
     <script src="../day 15/js/index.js"></script>
-    <script src="./script1.js"></script>
+    <script src="./script.js"></script>
 
     
 </body>

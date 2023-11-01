@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Record</title>
+    <link rel="stylesheet" href="../day 15/css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div>
+            <h1>Users</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Avatar</th>
+                            <th>Fist Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="content">
+                     <tr>
+                        <td>Loding....</td>
+                     </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <form  onsubmit="createUser(event)">
+                            <div class="form-group">
+                                <label for="fname">First Name:</label>
+                                <input type="text" class="form-control" id="fname" name="fname"
+                                    placeholder="Enter Your First Name " required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lname">Last Name:</label>
+                                <input type="text" class="form-control" id="lname" name="lname"
+                                    placeholder="Enter Your Last Name " required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="Enter Your Email " required>
+                            </div>
+                            <div class="form-group">
+                                <label for="avatar">Avatar:</label>
+                                <input type="text" class="form-control" id="avatar" name="avatar"
+                                    placeholder="Enter Your URL " required>
+                            </div>
+                            <div class="form-group m-3">
+                                <button type="reset" class="btn  btn-secondary">Reset</button>
+                                <button type="submit" class="btn btn-success">submit</button>
+                            </div>
+    
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../day 15/js/index.js"></script>
+    <script src="./script.js"></script>
+
+    
+</body>
+</html>

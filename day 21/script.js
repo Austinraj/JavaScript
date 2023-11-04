@@ -1,8 +1,14 @@
+// window 
 
-const log =document.getElementById("selectedOption");
+// console
+// document
+// setTimeout
+// web API
 
+console.log("austin");
 
-function displaySelectedOption(){
-  log.textContent = target.value.length;
+setTimeout(()=>{
+  console.log("Guvi inside settimout")
+},3000);
 
-}
+console.log("zen");

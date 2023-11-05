@@ -8,6 +8,7 @@
 // Call back function 
 // it call Async
 
+// event loop?
 // GEC -Globle Exection context
 
 // call Stack -read panni executed pannum
@@ -29,3 +30,7 @@ setTimeout(()=>{
 },3000);
 
 console.log("zen");
+
+const arr = [1,2,3,4,5];
+arr.map((a) => a*1);
+console.log(arr);

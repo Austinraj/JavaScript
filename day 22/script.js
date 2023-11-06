@@ -4,9 +4,9 @@ function getPost(postId, cb) {
         if (this.readyState === 4) {
             if (this.status === 200) {
                 const post = JSON.parse(this.responseText);
-                cb(null, post);
+                cb({status: "success", data: post});
             } else {
-                cb("cannot fetch post data");
+                cb({status:"error", error:"cannot fetch post data"});
             }
         }
     };
@@ -14,11 +14,11 @@ function getPost(postId, cb) {
     htpp.send();
 }
 
-getPost(1, (error, result)=>{
-    if(error){
-        console.error(error);
+getPost(1, (result)=>{
+    if(result.status === "error"){
+        console.error(result.error);
     }else{
-        console.log(result);
+        console.log(result.data);
     }
-})
+});
 

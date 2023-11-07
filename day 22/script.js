@@ -44,3 +44,57 @@ promise.then((result) => {
     .finally(() => {
         console.log("finally");
     })
+
+
+// Promise Methods 
+// all
+// any
+// allSettled
+// race
+
+const promise1 = new Promise((resolve, reject) => {
+    reject("promise 1");
+});
+const promise2 = new Promise((resolve, reject) => {
+    resolve("promise 2");
+});
+const promise3 = new Promise((resolve, reject) => {
+    reject("promise 3");
+});
+// all
+// Promise.all([promise1, promise2, promise3])
+// .then((res)=>{
+//     console.log(res)
+// })
+// .catch((err)=>{
+//     console.error(err);
+// });
+
+// allSettled
+// Promise.allSettled([promise1, promise2, promise3])
+// .then((res)=>{
+//     console.log(res)
+// });
+
+// any  succes only print pannum 
+// Promise.any([promise1, promise2, promise3])
+// .then((res)=>{
+//     console.log(res)
+// })
+// .catch((err)=>{
+//     console.error(err);
+// });
+
+// AggregateError: All promises were rejected
+
+
+
+// race
+// succes or err first a executed agum
+Promise.race([promise1, promise2, promise3])
+    .then((res) => {
+        console.log(res)
+    })
+    .catch((err) => {
+        console.error(err);
+    });

@@ -258,14 +258,141 @@ getUsers1()
     console.error(err);
 })
 
+
+
 // Promise methods
 // promise.all
+const promise3 = new Promise((reslove,reject)=>{
+    setTimeout(()=>{
+        reslove("guvi");
+    },3000)
+})
+const promise4 =fetch("https://www.mecallapi.com/api/users");
+const promise5 = fetch("https://www.mecallapi.com/api/attaractions");
 
-
+Promise.all([promise3,promise4,promise5])
+.then((res) =>{// one is reject Anaa catch wrok agum
+    console.log(res);//all cedition true only executed
+}).catch((err)=>{
+    console.error(err);
+})
 
 // promise.allSettled
+Promise.allSettled([promise3,promise4,promise5])
+.then((res) =>{// seucces or error that allSettled using then only
+    console.log(res);
+})// catch thevailla
 
 // promise.any
+Promise.any([promise3,promise4,promise5])
+.then((res) =>{// quick mudigura output display pannum
+    console.log(res);//reject consider panna thu 
+})// all error AggregaterError varum
 
 
 // promise.race
+Promise.any([promise3,promise4,promise5])
+.then((res) =>{// first finish aguratha display pannum
+    console.log(res);//error and result also show
+})
+.catch((err)=>{
+    console.log(err);
+})
+
+// promise Chening problem 
+const promise6 =new Promise((reslove,reject)=>{
+    reslove("guvi");
+})
+
+promise6
+.then((res)=>{
+    console.log(res);
+    return res;//return key use panni next then la use panalam 
+    throw new Error("Error from then 1");
+})
+.then((res)=>{
+    console.log("raja",res);
+    return res;
+})
+.then(()=>{
+    console.log("shanker");
+})
+.catch((err)=>{// one more catch use pannalum one madutha yedugum
+    console.log(err);
+})
+.finally(()=>{//finally confimed call agum
+    console.log("finally 1 !!")
+})
+.finally(()=>{// finally full output tharum
+    console.log("finally 2");//multiple eruthalum print pannum  
+})
+
+// function fullUrl(){
+//   const API_URL = fetch("https://jsonplaceholder.typicode.com/");
+//   return API_URL;
+// }
+
+
+// function getPost(id){
+//     return fullUrl(`${API_URL}posts/${id}`);
+// }
+// function getUsaert(id){
+//     return fetch(`https://jsonplaceholder.typicode.com/posts/${users}`);
+// }
+// function getComments(id){
+//     return fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+// }
+
+
+
+const getPost = (id) =>{
+    fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+}
+const getUser = (users) =>{
+    fetch(`https://jsonplaceholder.typicode.com/users/${users}`);
+
+}
+const getComments = (id) =>{
+    fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`);
+
+}
+
+
+(async()=>{
+    try{
+      let post = await getPost(1);  
+      post = await post.json();
+        console.log(post);
+
+      let user = await getUser(post.userId);
+      user = user.json();
+        console.log(user);
+
+      let comment = await getUser(post.id);
+      comment = comment.json();
+      console.log(comment);
+
+      console.log({post, user,comment});
+    }
+    catch{
+        console.error(err);
+    }
+})()
+
+
+getPost(1)
+.then((res)=>{
+    
+    if(!res.ok){
+        throw new Error("cannot Fecth post data")
+    }
+    return  res.json();
+})
+.then(()=>{
+    
+})
+.catch((err)=>{
+    console.log(err);
+})
+
+

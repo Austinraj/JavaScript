@@ -27,19 +27,8 @@
 
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                  </tr>
-                  
+                <tbody id="data">
+
                 </tbody>
               </table>
         </div>
@@ -47,55 +36,59 @@
         <div class="container col-sm-6 mt-5">
         <div class="container-fluid">
 
-            <form class="row g-3">
+            <form class="row g-3" id="formdata" onsubmit="Data(event)">
                 <div class="col-md-6">
-                  <label for="inputEmail4" class="form-label">FirstName</label>
-                  <input type="text" class="form-control" id="inputEmail4">
+                  <label for="fname" class="form-label">FirstName</label>
+                  <input type="text" class="form-control" id="fname">
                 </div>
                 <div class="col-md-6">
-                  <label for="inputPassword4" class="form-label">LastName</label>
-                  <input type="text" class="form-control" id="inputPassword4">
+                  <label for="lname" class="form-label">LastName</label>
+                  <input type="text" class="form-control" id="lname">
                 </div>
-                <div class="col-12">
-                  <label for="inputAddress" class="form-label">Address</label>
-                  <input type="text" class="form-control" id="inputAddress" >
+                <div class="col-md-6">
+                  <label for="inputId" class="form-label">Id</label>
+                  <input type="tel" class="form-control" id="inputId">
+                </div>
+                <div class="col-md-6">
+                  <label for="address" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="address" >
                 </div>
                 <div class="col-12">
                   <label for="Gender" class="form-label me-5">Gender</label>
            
                   <input type="radio"  id="Gender" name="Gender">
                   <label for="Gender" class="me-5" >Male</label>
-                  <input type="radio"  id="Gender" name="Gender">
+                  <input type="radio"  id="female" name="Gender">
                   <label for="Gender" class="me-3">Female</label>
                 </div>
                 <div class="col-12">
-                    <label for="food" class="me-5">Foods</label>
-                    <input type="checkbox" id="food" name="food">
-                  <label for="food" class="me-4">Rice</label>
+                    <label for="foods" class="me-5">Foods</label>
+                    <input type="checkbox" id="foods" name="food">
+                  <label for="foods" class="me-4">Rice</label>
 
-                    <input type="checkbox" id="food" name="food">
-                  <label for="food" class="me-4">Meat</label>
+                    <input type="checkbox" id="food1" name="food">
+                  <label for="food1" class="me-4">Meat</label>
 
-                    <input type="checkbox" id="food" name="food">
-                  <label for="food" class="me-4">Seafood</label>
+                    <input type="checkbox" id="food2" name="food">
+                  <label for="food2" class="me-4">Seafood</label>
 
-                    <input type="checkbox" id="food" name="food">
-                  <label for="food" class="me-4">Soup</label>
-                    <input type="checkbox" id="food" name="food">
-                  <label for="food" class="me-3">Pizza
+                    <input type="checkbox" id="food3" name="food">
+                  <label for="food3" class="me-4">Soup</label>
+                    <input type="checkbox" id="food4" name="food">
+                  <label for="food4" class="me-3">Pizza
                     
                   </label>
-                  <label for="">  <h6 class="text-danger ">(must choose at 
+                  <label>  <h6 class="text-danger ">(must choose at 
                     last 2)</h6></label>
                 
                 </div>
                 <div class="col-md-6">
                   <label for="inputCity" class="form-label">State</label>
-                  <input type="text" class="form-control" id="inputCity">
+                  <input type="text" class="form-control" id="state">
                 </div>
                 <div class="col-md-4">
                   <label for="inputState" class="form-label">Country</label>
-                  <select id="inputState" class="form-select">
+                  <select id="country" class="form-select">
                     <option selected>Choose</option>
                     <option>Indai</option>
                   </select>
@@ -116,7 +109,7 @@
         </div>
     </div>
     <script src="./script.js"></script>
-    <script src="/day 15/js/index.js"></script>
+    <!-- <script src="/day 15/js/index.js"></script> -->
 </body>
 
 </html>

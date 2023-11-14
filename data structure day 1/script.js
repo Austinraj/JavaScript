@@ -31,25 +31,31 @@
 // Problem #2
 // Given array num of integers, return how many of them have even number of digits
 
-num1 =[15,111,654,4656];
+// num1 =[15,111,654,4656];
 
-    var ans =0;
-    var count =0;
-    for(var i=0;i<num1.lengt;i++){
-        var temp =num1[i];
-        while(temp !=0){
-            temp = temp/10
-            count++;
-        }
-        if(num1[i] %2 ==0){
-            count =0;
-        }
+//     var ans =0;
+    // var count =0;
+    // for(var i=0;i<num1.lengt;i++){
+    //     var temp =num1[i];
+    //     while(temp !=0){
+    //         temp = temp/10
+    //         count++;
+    //     }
+    //     if(num1[i] %2 ==0){
+    //         count =0;
+    //     }
         
+    // }
+    // console.log(ans);
+
+    nums=[1,1,11,121,131,141,98];
+        let ans =[];
+    for(var i of nums){
+        if(nums){
+            console.log(nums)
+            
+        }
     }
-    console.log(ans);
-
-
-
 
 
 

@@ -10,7 +10,6 @@ async function Country() {
         <div class="card-title ">
             <p class="card-title bg-dark text-light text-center" >${name}</p>
         </div>
-        
         <div class="card-body">
           <p class="card-text">Capital:${capital}</p>
           <p class="card-text">Region:${region}</p>
@@ -46,8 +45,8 @@ const api_URL = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=
     </div>`
       
  }
-weather("Afghanistan");
-weather("American Samoa");
+weather("chennai");
+weather();
 
 
 

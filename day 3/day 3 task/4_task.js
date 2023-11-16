@@ -5,7 +5,7 @@ var str;
 var student;
 var isActive1;
 
-console.log(name1);
+console.log(name1);//undefined
 console.log(str);
 console.log(student);
 console.log(isActive1);
@@ -16,7 +16,7 @@ console.log(isActive1);
 
 var myvar= 1;
 console.log("myvar");
-console.log(myvar);
+console.log(myvar);// this for corret
 
 //Remove the "" is
 
@@ -90,13 +90,13 @@ Any non-zero number including negative numbers is truthy.*/
 //2.Swapping 2 numbers
 
 var x = 10 , y =5;
-console.log("befor Swapping: x =" + x +", y=" + y);
+console.log(`befor Swapping: x =  ${x} , y=  ${y}`);
 
-x = x - y;
+x = x - y;//10-5 =5
 
-y = x + y;
+y = x + y;//5+5 = 10
 
-x = x - y;
+x = x - y;//10-5 = 5
 
 console.log("After swapping: x =" + x +", y="+y);
 

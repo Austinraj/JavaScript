@@ -1,9 +1,9 @@
 const http = new XMLHttpRequest();
 
-http.onreadystatechange = function (){
-    if(this.readyState == 4){
-        if(this.status == 200){
-            const user =JSON.parse(this.responseText);
+http.onreadystatechange = function ({readyState,status,responseText}){
+    if(readyState === 4){
+        if(status === 200){
+            const user =JSON.parse(responseText);
             user.forEach(country => {
                 const countryname =country.name.common;
                 const region = country.region;
@@ -11,13 +11,13 @@ http.onreadystatechange = function (){
                 const population = country.population;
           
                 const countryflage =country.flags.png;
-              //  console.log(countryname);
+               console.log(countryname);
                 console.log(region);
-              //  console.log(subRegion);
-               // console.log(population);
-               // console.log(countryflage);
+               console.log(subRegion);
+               console.log(population);
+               console.log(countryflage);
 
-                //console.log(country);
+                console.log(country);
             });
         }
         else{

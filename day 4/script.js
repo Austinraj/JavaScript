@@ -39,13 +39,13 @@ for (var i in test){
 
  var emp = {name: "austin", age: "21"};
  for (var i in emp){
-    console.log(i,emp[i])
+    console.log(i,emp[i])//name,austin 
  }
 
  //for of
-
+//value only not index
   for ( var i of test){
-    console.log(i);
+    console.log(i);//1,2,3,45,5
   }
 
   //forEach
@@ -107,6 +107,9 @@ for (var i in test){
   console.log(typeof(da));
   da = JSON.parse(da);
   console.log(typeof(da));
+  // da = JSON.stringify(da);
+  // console.log(typeof(da));
+
 console.log(da);
   
   da.forEach(da => console.log(da.name))

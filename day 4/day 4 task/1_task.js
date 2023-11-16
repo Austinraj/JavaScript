@@ -11,7 +11,7 @@
 //a.
 const array = [1,2,3,4,5,6,7,8,9,10];
 var number = function(){//anonymous function
-    for (i of array){
+    for (var i of array){// for(var i=0;i<array.length; i++) 
         if(i %2 ==0){
             console.log(i);
         }
@@ -115,8 +115,9 @@ var arr = ["car", "bus","bike", "car","bicycle", "bike", ];
 
 var duplicates =  arr.filter((element, index) =>{//anonymous function
         return arr.indexOf(element) == index
-    });
-duplicates.forEach(console.log);
+    }).forEach(console.log);
+
+// duplicates.forEach(console.log);
 
 (function(){//IIFE
     let arr = ["car","bike", "car","bicycle", "bike", ];

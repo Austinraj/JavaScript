@@ -5,7 +5,7 @@ async function fetchCountryData() {
     const response = await fetch(apiUrl);
     const countries = await response.json();
 
-    countries.forEach(country => {
+    countries.map(country => {
       const countryName = country.name.common;
       const region = country.region;
       const subRegion = country.subregion;

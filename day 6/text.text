@@ -24,14 +24,14 @@ Comparative operators
 
 ternary operators
     ? : // ? true
-    // : flase
+        // : flase
 
 Condition Statements
     if
     else 
     else if
 
-Iteration/Lop\oping Statements
+Iteration/Lopping Statements
     for
     For IN (Array - index, object - key)
     For of
@@ -40,7 +40,7 @@ Iteration/Lop\oping Statements
 
 INcrement/Decrement
     ++i (pre-Inc)
-    i++ (Poast-Inc)
+    i++ (Post-Inc)
     --i (Pre-Dec)
     i-- (Post-Dec)
 

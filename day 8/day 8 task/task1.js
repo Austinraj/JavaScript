@@ -31,7 +31,7 @@ class Movie {
 
       
     }
-    getPG = function(){
+    get PG(){
         // if(rating == "PG"){
         //     console.log(`${rating}`);
         // }else{
@@ -48,4 +48,4 @@ class Movie {
 const print1 = new Movie("Casino Royale","Eon Production","PG");
 //console.log(print)
 
-print1.getPG();
+print1.PG;

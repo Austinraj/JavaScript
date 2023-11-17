@@ -47,7 +47,7 @@ class Student {
         this.firstName1 = firstName;
         this.lastName1 = lastName;
     }
-    printName = function(){
+    printName = ()=>{
         console.log(`${this.firstName1} ${this.lastName1}`);
     }
 }

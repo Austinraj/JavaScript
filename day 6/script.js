@@ -3,7 +3,7 @@
 var i = 1;
 i = i + 1;
 i++; // i + 1 only used panna mudiyum
-i += 1;//i++
+i += 1;//i++ //i =i +1
 i *= 5;
 
 for( var i =1 ; i< 10 && 1 % 2 ; i+= 2){
@@ -44,8 +44,8 @@ var test = "1234";
 //parseInt()
 //parseFloat()
 
-console.log(typeof(test));
-console.log(typeof(+test));
+console.log(typeof(test));//string
+console.log(typeof(+test));//number
 
 var str = "1243";
 number = parseInt(str);

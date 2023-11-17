@@ -105,6 +105,8 @@ const names = ["tamil", "shaker", "moorthi"];
 //index shif agum 0 -> -1, 1-> 0, 2-> 1;
 names.shift();
 console.log(names);
+names.unshift();
+console.log(names);
 
 
 //Slice

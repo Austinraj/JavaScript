@@ -151,7 +151,7 @@ function getUsers(cb) {
     fetch("https://www.mecallapi.com/api/users")
         .then((res) => {
             cb(null, res);
-        })//output undefined
+        })
         .catch((err) => {
             cb(err);
         });
@@ -160,7 +160,7 @@ function getAttractions(cb) {
     fetch("https://www.mecallapi.com/api/attractions")
         .then((res) => {
             cb(null, res);
-        })//output undefined
+        })
         .catch((err) => {
             cb(err);
         });
@@ -291,7 +291,7 @@ Promise.any([promise3,promise4,promise5])
 
 
 // promise.race
-Promise.any([promise3,promise4,promise5])
+Promise.race([promise3,promise4,promise5])
 .then((res) =>{// first finish aguratha display pannum
     console.log(res);//error and result also show
 })

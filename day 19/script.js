@@ -38,7 +38,7 @@ const ele4 = document.querySelectorAll("div.content"); //Array
 console.log(ele4);
     // document.getElementById -> object
     // document.getElementsByClassName ->array
-    // document.getElementsByTagName
+    // document.getElementsByTagName ->array
 
 
 

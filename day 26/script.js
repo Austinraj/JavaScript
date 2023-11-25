@@ -1,6 +1,7 @@
 // npm - node package manager
 // npm init
 
-// all detail in react class folder iruku
+// Class 26-31
+// all detail in react class folder iruku 
 
 

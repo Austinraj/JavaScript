@@ -31,21 +31,15 @@
         </style> -->
 
   </head>
-  <body oninput="displaySelectedOption()">
-    <input type="radio" name="option" id="option1" value="opt1">
-    <label for="option1">Option 1</label>
-    <input type="radio" name="option" id="option2" value="opt2">
-    <label for="option2">Option 2</label>
-    <input type="radio" name="option" id="option3" value="opt3">
-    <label for="option3">Option 3</label>
-    <input type="radio" name="option" id="option4" value="opt4">
-    <label for="option4">Option 4</label>
-    <input type="radio" name="option" id="option5" value="opt5">
-    <label for="option5">Option 5</label>
-    <input type="radio" name="option" id="option6" value="opt6">
-    <label for="option6">Option 6</label>
-    <p>The Selected option is </p>
-    <p id="selectedOption"></p>
+  <body>
+    <label>Input 1</label>
+    <input id="in1" oninput="compare()"/>
+    <br><br>
+    <label>Input 2</label>
+    <input id="in2" oninput="compare()"/>
+    <p>Is Input 1 is lesser than Input 2 is</p>
+    <p id="result"></p>
+   
 
   <script src="./script.js"></script>
 

@@ -19,7 +19,7 @@ const btnEl = document.getElementById("test");
 btnEl.onmouseover = onmouseov;
 
 function eve(evt){
-    document.getElementById("input").innerText  =evt.target.value;
+    document.getElementById("input").innerText  =evt.target.value.length;
 }
 
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Static Template</title>
-     <style>
+     <!-- <style>
         /* 
         Align the div at the center of the flex using the 
         css selector (flex-container) */
@@ -28,13 +28,26 @@
                 grid-column-end: 3;
                 background-color: #f1f1f1;
             }
-        </style>
+        </style> -->
 
   </head>
-  <body>
- <div class="flex-container">
-            <div>1</div>
-        </div>
+  <body oninput="displaySelectedOption()">
+    <input type="radio" name="option" id="option1" value="opt1">
+    <label for="option1">Option 1</label>
+    <input type="radio" name="option" id="option2" value="opt2">
+    <label for="option2">Option 2</label>
+    <input type="radio" name="option" id="option3" value="opt3">
+    <label for="option3">Option 3</label>
+    <input type="radio" name="option" id="option4" value="opt4">
+    <label for="option4">Option 4</label>
+    <input type="radio" name="option" id="option5" value="opt5">
+    <label for="option5">Option 5</label>
+    <input type="radio" name="option" id="option6" value="opt6">
+    <label for="option6">Option 6</label>
+    <p>The Selected option is </p>
+    <p id="selectedOption"></p>
+
+  <script src="./script.js"></script>
 
   </body>
 </html>

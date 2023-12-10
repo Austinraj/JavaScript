@@ -67,9 +67,23 @@ Note: Values are changed dynamically for evaluation */
 // compare();
 
 //16.
-const changeEl = document.getElementsByClassName("changeMeToBlue") ;
-document.getElementById("id").hidden
+// const changeEl = document.getElementsByClassName("changeMeToBlue") ;
+// document.getElementById("id").hidden
 
 
 
 // document.getElementById("id").style.textAlign = "center" ;
+
+// const t = document.createElement('p');
+// t.innerHTML = ""
+
+
+// 28.
+function fun(){
+    let a =  document.getElementById("in1").value;
+    //  a.sort();
+    if(a >= 5){
+        document.getElementById("result").innerHTML = a;
+    }
+}
+fun();

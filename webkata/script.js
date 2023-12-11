@@ -79,11 +79,11 @@ Note: Values are changed dynamically for evaluation */
 
 
 // 28.
-function fun(){
-    let a =  document.getElementById("in1").value;
-    //  a.sort();
-    if(a >= 5){
-        document.getElementById("result").innerHTML = a;
-    }
-}
-fun();
+// function fun(){
+//     let a =  document.getElementById("in1").value;
+//     //  a.sort();
+//     if(a >= 5){
+//         document.getElementById("result").innerHTML = a;
+//     }
+// }
+// fun();

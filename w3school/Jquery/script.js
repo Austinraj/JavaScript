@@ -82,11 +82,12 @@ $(document).ready(function(){
 // slideDown()
 // slideUp()
 // slideToggle()
-$(document).ready(function(){
-    $("#flip").click(function(){
-        $("#panel").slideToggle("slow")
-    });
-})
+
+// $(document).ready(function(){
+//     $("#flip").click(function(){
+//         $("#panel").slideToggle("slow")
+//     });
+// })
 
 // The animate() Method
 $(document).ready(function(){
@@ -100,3 +101,89 @@ $(document).ready(function(){
 })
 
 // stop() Method
+$(document).ready(function(){
+    $("#flip").click(function(){
+      $("#panel").slideDown(5000);
+    });
+    $("#stop").click(function(){
+      $("#panel").stop();
+    });
+  });
+
+
+// chaining
+
+$(document).ready(function(){
+    $("#btn").click(function(){
+        $("#p1").css("color" , "red").hide(2000).show(2000)
+    })
+})
+
+// Get Content - text(), html(), and val()
+// attr()
+// value or content get pannurathu
+
+
+
+
+// Set Content - text(), html(), and val() 
+
+// value or content set pannurathu
+
+
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#test1").text(function(i,result){
+            return  "text:" + result +" (index"+i+")"
+        })
+    }),
+    $("#btn2").click(function(){
+        $("#test2").html(function(i,result){
+            return  "text:" + result +" (index"+i+")"
+        })
+    })
+})
+// attr()
+
+$(document).ready(function(){
+    $("#btn3").click(function(){
+        $("#w3s").attr({
+            "href" : "https://www.w3schools.com/jquery/",
+            "title" : "W3Schools jQuery Tutorial"
+        })
+    })
+})
+
+
+// Remove Elements/Content
+
+// remove () => totle element remove agum
+
+// $(document).ready(function(){
+//     $("#btn4").click(function(){
+//         $("#div5").remove()
+//     })
+// })
+
+// empty() => content remove agum
+$(document).ready(function(){
+    $("#btn4").click(function(){
+        $("#div5").empty()
+    })
+})
+
+
+// jQuery Manipulating CSS
+// addClass()
+// removeClass() 
+// toggleClass() => addClass() and removeClass() 
+
+$(document).ready(function(){
+    $("#btn5").click(function(){
+        $("#div6").toggleClass("important blue")
+    })
+})
+
+
+// jQuery - css() Method
+// .css() => all the css include pannalam

@@ -17,6 +17,26 @@ function clickhande(){
 // dblclick 	    keydown	            change	        resize
 // mouseenter	    keyup	            focus	        scroll
 // mouseleave	 	blur	            unload
+// mousedown
+// mouseup
+// hover
+
+
+// The on() Method
+$(document).ready(function(){
+    $(".on").on({
+      mouseenter: function(){
+        $(".on").css("background-color", "lightgray");
+      },  
+      mouseleave: function(){
+        $(".on").css("background-color", "lightblue");
+      }, 
+      click: function(){
+        $(".on").css("background-color", "yellow");
+      }  
+    });
+  });
+
 
 $(document).ready(function(){
     $("#hide").click(function(){
@@ -43,6 +63,12 @@ $(document).ready(function(){
 })
 
 
+
+// Fade Effects 
+// fadeIn() 
+// fadeOut()
+// fadeIn , fadeOut => feadeToggle()
+// fadeTo = fadeTo("slow", 0.15) => 2nd parameter is opacity ( 0 to 1)
 $(document).ready(function(){
     $("#fade").click(function(){
         $("#div1").fadeToggle(),
@@ -51,3 +77,26 @@ $(document).ready(function(){
     })
 })
 
+
+//  Sliding Effects
+// slideDown()
+// slideUp()
+// slideToggle()
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow")
+    });
+})
+
+// The animate() Method
+$(document).ready(function(){
+    $(".div4").hover(function(){
+        $(".div4").animate({
+            // left: "300px",
+            height : "toggle",
+            width : "300px",
+        })
+    })
+})
+
+// stop() Method

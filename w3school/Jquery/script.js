@@ -187,3 +187,7 @@ $(document).ready(function(){
 
 // jQuery - css() Method
 // .css() => all the css include pannalam
+
+$(document).ready(function(){
+    $("#div4").css("background-color: red")
+})

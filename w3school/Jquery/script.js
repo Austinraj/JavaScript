@@ -191,3 +191,12 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#div4").css("background-color: red")
 })
+
+// jQuery Dimension Methods
+
+// width()
+// height()
+// innerWidth()
+// innerHeight()
+// outerWidth()
+// outerHeight()

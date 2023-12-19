@@ -200,3 +200,14 @@ $(document).ready(function(){
 // innerHeight()
 // outerWidth()
 // outerHeight()
+
+
+
+
+
+
+
+
+
+
+

@@ -172,6 +172,10 @@ $(document).ready(function(){
     })
 })
 
+$(document).ready(function(){
+    $()
+})
+
 
 // jQuery Manipulating CSS
 // addClass()

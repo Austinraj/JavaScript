@@ -71,7 +71,7 @@ insert all
         into student_info values(1000),
         select * from dual;
 
-
+join query :->
         
 
 

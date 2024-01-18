@@ -11,6 +11,7 @@ events, register for events they're interested in, and view their own event hist
 One of the key features of our system is its flexibility and ease of use. It streamlines the event management process,
 making it convenient for both event organizers and attendees. Additionally, it provides valuable insights into event
 performance, attendance, and customer preferences through data stored in the MySQL database.
+making it a valuable tool for anyone looking to organize and participate in events efficiently.
  
 The combination of Java for the frontend and MySQL for the backend ensures a robust and responsive application that
 meets the needs of both the administrators and the end-users. Our project offers a comprehensive solution for event
